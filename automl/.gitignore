@@ -1,0 +1,10 @@
+dist/
+build/
+*.egg-info/
+__pycache__/
+
+*.npy
+data/
+logs/
+checkpoints/
+.DS_Store

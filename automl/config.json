@@ -1,0 +1,26 @@
+{
+    "tag": "mnist",
+    "description": "training dense11 in mnist",
+    "seed": 100,
+    "mode": "train",
+
+    "verbose": 10,
+    "log_step": 100,
+
+    "device": "cuda",
+    "half": true,
+
+    "env": "mnist",
+    "batch_size": 32,
+    "shuffle": true,
+    "num_workers": 4,
+
+    "agent": "cross_entropy",
+    "num_epochs": 40,
+    "learning_rate": 1e-3,
+    "momentum": 0.9,
+    "weight_decay": 1e-5,
+    
+    "model": "dense11",
+    "checkpoint": null
+}
