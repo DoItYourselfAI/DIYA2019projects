@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Instagram Captioning</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/resultpage.css" />
+    </head>
+    <body>
+
+        <!--Wrapper-->
+            <div id="wrapper">
+
+                <!-- Header-->
+                    
+                <!-- Main-->
+                    <div class = "js-cap cap">
+                        <section class="App-main">
+                            <div class="Posts">
+                                <article class="Post"> 
+                                
+                                    <div class="Post-user">
+                                        <div class="Post-user-avatar">
+                                            <img src="https://gitlab.diyaml.com/uploads/-/system/appearance/header_logo/1/DIYA_Textlogo_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png" alt="DIYA">
+                                        </div>
+                                        <div class="Post-user-nickname">
+                                            <span>com_vision</span>
+                                        </div>
+                                    </div>    
+                                                               
+                                    <div class="Post-image">
+                                        <div class= "Post-image-bg">
+                                            <form action="/" method="post" enctype="multipart/form-data" class ="imageUpload">
+                                                <input type="file" name="image" >
+                                                <input type="submit" class= "button alt">
+                                            </form>
+                                        </div>    
+                                    </div>
+                                    <div class="Post-caption">
+                                        <strong>com_vision</strong> Moving the community!
+                                    </div>         
+                                        <br>
+                                    <div class="Post-hashtag">      
+                                        #hashtag
+                                    </div> 
+                               
+                                </article>
+                            </div>    
+                        </section>
+                    </div>
+                    <div class = "resultcap showing">  
+                        <section class="App-main">
+                            <div class="Posts">
+                                <article class="Post">                                 
+                                    <div class="Post-user">
+                                        <div class="Post-user-avatar">
+                                           <a href="/"><img src="https://gitlab.diyaml.com/uploads/-/system/appearance/header_logo/1/DIYA_Textlogo_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png" alt="DIYA"></a>
+                                        </div>
+                                        <div class="Post-user-nickname">
+                                            <span>com_vision</span>
+                                        </div>
+                                    </div>    
+                                                               
+                                    <div class="Post-image">
+                                        <div class= "Post-image-bg">
+                                            <img alt="Moving the community!" src="{{ image_url }}">
+                                        </div>    
+                                    </div>
+                                    <div class="Post-caption">
+                                        <strong>com_vision</strong> {{ caption }}
+                                    </div>         
+                                        <br>
+                                    <div class="Post-hashtag">      
+                                        {{ hashtag }}
+                                    </div>                                
+                                </article>
+                            </div>    
+                        </section>                       
+                    </div>    
+                <script src="/static/type.js"></script>
+            </div>
+    </body>
+</html>
+
