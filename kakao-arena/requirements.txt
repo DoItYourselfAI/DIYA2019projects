@@ -1,0 +1,11 @@
+# from brunch-article-recommendation
+six
+fire
+tqdm
+git+git://github.com/honnibal/mmh3.git@8f68a372b13b1c72da4e6a14beb559f21f5f541e#egg=mmh3
+
+# additional requirements
+termcolor
+tensorflow
+tensorboardX
+json_lines
